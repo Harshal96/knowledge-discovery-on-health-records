@@ -1,0 +1,21 @@
+(dp1
+S'output'
+p2
+S"<type 'exceptions.IOError'> ~/pima-indians-diabetes.csv not found."
+p3
+sS'layer'
+p4
+S'/home/ria/Desktop/web2py/applications/simpleNN/controllers/default.py'
+p5
+sS'code'
+p6
+S'<code object <module> at 0x7f5277be6530, file "/home/ria/Desktop/web2py/applications/simpleNN/controllers/default.py", line 1>'
+p7
+sS'snapshot'
+p8
+(dp9
+sS'traceback'
+p10
+S'Traceback (most recent call last):\n  File "/home/ria/Desktop/web2py/gluon/restricted.py", line 219, in restricted\n    exec(ccode, environment)\n  File "/home/ria/Desktop/web2py/applications/simpleNN/controllers/default.py", line 69, in <module>\n  File "/home/ria/Desktop/web2py/gluon/globals.py", line 419, in <lambda>\n    self._caller = lambda f: f()\n  File "/home/ria/Desktop/web2py/applications/simpleNN/controllers/default.py", line 18, in index\n    dataset = numpy.loadtxt("~/pima-indians-diabetes.csv", delimiter=",")\n  File "/usr/local/lib/python2.7/dist-packages/numpy/lib/npyio.py", line 917, in loadtxt\n    fh = np.lib._datasource.open(fname, \'rt\', encoding=encoding)\n  File "/usr/local/lib/python2.7/dist-packages/numpy/lib/_datasource.py", line 260, in open\n    return ds.open(path, mode, encoding=encoding, newline=newline)\n  File "/usr/local/lib/python2.7/dist-packages/numpy/lib/_datasource.py", line 616, in open\n    raise IOError("%s not found." % path)\nIOError: ~/pima-indians-diabetes.csv not found.\n'
+p11
+s.

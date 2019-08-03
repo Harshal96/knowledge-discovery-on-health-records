@@ -1,0 +1,6 @@
+{{extend 'layout.html'}}
+<h1>This is the result </h1>
+{{=BEAUTIFY(response._vars)}}
+
+
+<div>{{=value}}</div>

@@ -1,0 +1,21 @@
+(dp1
+S'output'
+p2
+S"<type 'exceptions.TypeError'> Cannot cast array data from dtype('float64') to dtype('S32') according to the rule 'safe'"
+p3
+sS'layer'
+p4
+S'/home/ria/Desktop/web2py/applications/simpleNN/controllers/palomino1.py'
+p5
+sS'code'
+p6
+S'<code object <module> at 0x7f38e00b8ab0, file "/home/ria/Desktop/web2py/applications/simpleNN/controllers/palomino1.py", line 3>'
+p7
+sS'snapshot'
+p8
+(dp9
+sS'traceback'
+p10
+S'Traceback (most recent call last):\n  File "/home/ria/Desktop/web2py/gluon/restricted.py", line 219, in restricted\n    exec(ccode, environment)\n  File "/home/ria/Desktop/web2py/applications/simpleNN/controllers/palomino1.py", line 154, in <module>\n  File "/home/ria/Desktop/web2py/gluon/globals.py", line 419, in <lambda>\n    self._caller = lambda f: f()\n  File "/home/ria/Desktop/web2py/applications/simpleNN/controllers/palomino1.py", line 126, in result\n    print("Predicted Mortality: {}" .format(network.predict(prediction_set) * 100))\n  File "/home/ria/Desktop/web2py/applications/simpleNN/controllers/palomino1.py", line 83, in predict\n    return self.update(predict_data)\n  File "/home/ria/Desktop/web2py/applications/simpleNN/controllers/palomino1.py", line 71, in update\n    signal = np.dot(output, weight_layer[1:, :]) + weight_layer[0:1, :]  # implicit bias\nTypeError: Cannot cast array data from dtype(\'float64\') to dtype(\'S32\') according to the rule \'safe\'\n'
+p11
+s.

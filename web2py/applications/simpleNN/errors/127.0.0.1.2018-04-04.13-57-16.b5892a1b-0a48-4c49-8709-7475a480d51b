@@ -1,0 +1,21 @@
+(dp1
+S'output'
+p2
+S'<type \'exceptions.ValueError\'> Bad input argument to theano function with name "predict_function" at index 0 (0-based).  \nBacktrace when that variable is created:\n\n  File "/home/ria/Desktop/web2py/applications/simpleNN/controllers/pima1.py", line 55, in <module>\n  File "/home/ria/Desktop/web2py/gluon/globals.py", line 419, in <lambda>\n    self._caller = lambda f: f()\n  File "/home/ria/Desktop/web2py/applications/simpleNN/controllers/pima1.py", line 25, in result1\n    pmodel.add(Dense(12, input_dim=8, activation=\'relu\'))\n  File "/usr/local/lib/python2.7/dist-packages/keras/models.py", line 463, in add\n    name=layer.name + \'_input\')\n  File "/usr/local/lib/python2.7/dist-packages/keras/engine/topology.py", line 1455, in Input\n    input_tensor=tensor)\n  File "/usr/local/lib/python2.7/dist-packages/keras/legacy/interfaces.py", line 91, in wrapper\n    return func(*args, **kwargs)\n  File "/usr/local/lib/python2.7/dist-packages/keras/engine/topology.py", line 1364, in __init__\n    name=self.name)\n  File "/usr/local/lib/python2.7/dist-packages/keras/backend/theano_backend.py", line 239, in placeholder\n    x = T.TensorType(dtype, broadcast)(name)\ncould not convert string to float: '
+p3
+sS'layer'
+p4
+S'/home/ria/Desktop/web2py/applications/simpleNN/controllers/pima1.py'
+p5
+sS'code'
+p6
+S'<code object <module> at 0x7f3850834e30, file "/home/ria/Desktop/web2py/applications/simpleNN/controllers/pima1.py", line 1>'
+p7
+sS'snapshot'
+p8
+(dp9
+sS'traceback'
+p10
+S'Traceback (most recent call last):\n  File "/home/ria/Desktop/web2py/gluon/restricted.py", line 219, in restricted\n    exec(ccode, environment)\n  File "/home/ria/Desktop/web2py/applications/simpleNN/controllers/pima1.py", line 55, in <module>\n  File "/home/ria/Desktop/web2py/gluon/globals.py", line 419, in <lambda>\n    self._caller = lambda f: f()\n  File "/home/ria/Desktop/web2py/applications/simpleNN/controllers/pima1.py", line 36, in result1\n    res=pmodel.predict(numpy.asmatrix(inputP))\n  File "/usr/local/lib/python2.7/dist-packages/keras/models.py", line 1027, in predict\n    steps=steps)\n  File "/usr/local/lib/python2.7/dist-packages/keras/engine/training.py", line 1800, in predict\n    verbose=verbose, steps=steps)\n  File "/usr/local/lib/python2.7/dist-packages/keras/engine/training.py", line 1301, in _predict_loop\n    batch_outs = f(ins_batch)\n  File "/usr/local/lib/python2.7/dist-packages/keras/backend/theano_backend.py", line 1227, in __call__\n    return self.function(*inputs)\n  File "/usr/local/lib/python2.7/dist-packages/theano/compile/function_module.py", line 813, in __call__\n    allow_downcast=s.allow_downcast)\n  File "/usr/local/lib/python2.7/dist-packages/theano/tensor/type.py", line 117, in filter\n    data = theano._asarray(data, dtype=self.dtype)\n  File "/usr/local/lib/python2.7/dist-packages/theano/misc/safe_asarray.py", line 34, in _asarray\n    rval = np.asarray(a, dtype=dtype, order=order)\n  File "/usr/local/lib/python2.7/dist-packages/numpy/core/numeric.py", line 492, in asarray\n    return array(a, dtype, copy=False, order=order)\nValueError: Bad input argument to theano function with name "predict_function" at index 0 (0-based).  \nBacktrace when that variable is created:\n\n  File "/home/ria/Desktop/web2py/applications/simpleNN/controllers/pima1.py", line 55, in <module>\n  File "/home/ria/Desktop/web2py/gluon/globals.py", line 419, in <lambda>\n    self._caller = lambda f: f()\n  File "/home/ria/Desktop/web2py/applications/simpleNN/controllers/pima1.py", line 25, in result1\n    pmodel.add(Dense(12, input_dim=8, activation=\'relu\'))\n  File "/usr/local/lib/python2.7/dist-packages/keras/models.py", line 463, in add\n    name=layer.name + \'_input\')\n  File "/usr/local/lib/python2.7/dist-packages/keras/engine/topology.py", line 1455, in Input\n    input_tensor=tensor)\n  File "/usr/local/lib/python2.7/dist-packages/keras/legacy/interfaces.py", line 91, in wrapper\n    return func(*args, **kwargs)\n  File "/usr/local/lib/python2.7/dist-packages/keras/engine/topology.py", line 1364, in __init__\n    name=self.name)\n  File "/usr/local/lib/python2.7/dist-packages/keras/backend/theano_backend.py", line 239, in placeholder\n    x = T.TensorType(dtype, broadcast)(name)\ncould not convert string to float: \n'
+p11
+s.

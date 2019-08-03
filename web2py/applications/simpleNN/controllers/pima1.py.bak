@@ -1,0 +1,59 @@
+from keras.models import Sequential
+from keras.layers import Dense
+from io import StringIO
+
+import numpy
+import math
+import sklearn
+
+def math_compatible_isclose(a, b, rel_tol=1e-09, abs_tol=0.0):
+    a, b = numpy.asarray(a), numpy.asarray(b)
+
+    equal = (a == b)
+    either_infinite = numpy.isinf(a) | numpy.isinf(b)
+
+    abs_diff = numpy.abs(b-a)
+    b_rtol_check = (abs_diff <= numpy.abs(rel_tol * b))
+    a_rtol_check = (abs_diff <= numpy.abs(rel_tol * a))
+    atol_check = (abs_diff <= abs_tol)
+    tol_check = atol_check | a_rtol_check | b_rtol_check
+
+    return equal | (~either_infinite & tol_check)
+
+model=None
+from sklearn.preprocessing import StandardScaler
+# -*- coding: utf-8 -*-
+# try something like
+#value = "10"
+def index(): return dict(message="hello from pima1.py")
+def predict1():
+    return dict(message="hi")
+def result1():
+	inputP=request.vars['value']
+	var=None
+
+	# create model
+	model = Sequential()
+	model.add(Dense(48, input_dim=8, init='uniform', activation='relu'))
+	model.add(Dense(12, init='uniform', activation='relu'))
+	model.add(Dense(1, init='uniform', activation='sigmoid'))
+
+	# Compile model
+	model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
+	model.load_weights("/home/ria/Desktop/ria.h5")
+	Z=numpy.asmatrix(inputP)
+	predictions = model.predict(Z)
+	rounded = [round(x[0]) for x in predictions]
+	if rounded<0.5:
+		var=("Patient will likely not have diabetes")
+	else:
+		var=("Patient is likely to have diabetes")
+	var=rounded[0]
+	return dict(message=var)
+def result2():
+    value = request.vars
+    value ="[['"+value['col1']+"','"+value['col2']+"','"+value['col3']+"','"+value['col4']+"','"+value['col5']+"','"+value['col6']+"','"+value['col7']+"','"+value['col8']+"']]"
+    # handle the variable
+    print value
+    print "test"
+    redirect(URL('result1', vars=dict(value=value)) )

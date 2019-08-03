@@ -1,0 +1,4 @@
+{{extend 'layout.html'}}
+<h1>This is the palomino1/result.html template</h1>
+<div>{{=value}}</div>
+{{=BEAUTIFY(response._vars)}}

@@ -1,0 +1,21 @@
+(dp1
+S'output'
+p2
+S"<type 'exceptions.AssertionError'> "
+p3
+sS'layer'
+p4
+S'/home/ria/Desktop/web2py/applications/simpleNN/controllers/default.py'
+p5
+sS'code'
+p6
+S'<code object <module> at 0x7fa506451a30, file "/home/ria/Desktop/web2py/applications/simpleNN/controllers/default.py", line 1>'
+p7
+sS'snapshot'
+p8
+(dp9
+sS'traceback'
+p10
+S'Traceback (most recent call last):\n  File "/home/ria/Desktop/web2py/gluon/restricted.py", line 219, in restricted\n    exec(ccode, environment)\n  File "/home/ria/Desktop/web2py/applications/simpleNN/controllers/default.py", line 69, in <module>\n  File "/home/ria/Desktop/web2py/gluon/globals.py", line 419, in <lambda>\n    self._caller = lambda f: f()\n  File "/home/ria/Desktop/web2py/applications/simpleNN/controllers/default.py", line 26, in index\n    model.add(Dense(12, input_dim=8, activation=\'relu\'))\n  File "/usr/local/lib/python2.7/dist-packages/keras/models.py", line 467, in add\n    layer(x)\n  File "/usr/local/lib/python2.7/dist-packages/keras/engine/topology.py", line 590, in __call__\n    self.build(input_shapes[0])\n  File "/usr/local/lib/python2.7/dist-packages/keras/layers/core.py", line 842, in build\n    constraint=self.kernel_constraint)\n  File "/usr/local/lib/python2.7/dist-packages/keras/legacy/interfaces.py", line 91, in wrapper\n    return func(*args, **kwargs)\n  File "/usr/local/lib/python2.7/dist-packages/keras/engine/topology.py", line 414, in add_weight\n    constraint=constraint)\n  File "/usr/local/lib/python2.7/dist-packages/keras/backend/theano_backend.py", line 150, in variable\n    value = value.eval()\n  File "/usr/local/lib/python2.7/dist-packages/theano/gof/graph.py", line 522, in eval\n    self._fn_cache[inputs] = theano.function(inputs, self)\n  File "/usr/local/lib/python2.7/dist-packages/theano/compile/function.py", line 317, in function\n    output_keys=output_keys)\n  File "/usr/local/lib/python2.7/dist-packages/theano/compile/pfunc.py", line 486, in pfunc\n    output_keys=output_keys)\n  File "/usr/local/lib/python2.7/dist-packages/theano/compile/function_module.py", line 1839, in orig_function\n    name=name)\n  File "/usr/local/lib/python2.7/dist-packages/theano/compile/function_module.py", line 1519, in __init__\n    optimizer_profile = optimizer(fgraph)\n  File "/usr/local/lib/python2.7/dist-packages/theano/gof/opt.py", line 99, in __call__\n    return self.optimize(fgraph)\n  File "/usr/local/lib/python2.7/dist-packages/theano/gof/opt.py", line 88, in optimize\n    ret = self.apply(fgraph, *args, **kwargs)\n  File "/usr/local/lib/python2.7/dist-packages/theano/gof/opt.py", line 242, in apply\n    sub_prof = optimizer.optimize(fgraph)\n  File "/usr/local/lib/python2.7/dist-packages/theano/gof/opt.py", line 88, in optimize\n    ret = self.apply(fgraph, *args, **kwargs)\n  File "/usr/local/lib/python2.7/dist-packages/theano/tensor/opt.py", line 367, in apply\n    reason="inplace_elemwise_optimizer")\n  File "/usr/local/lib/python2.7/dist-packages/theano/gof/fg.py", line 513, in replace\n    assert (node == \'output\' and self.outputs[i] is r) or (node.inputs[i] is r)\nAssertionError\n'
+p11
+s.

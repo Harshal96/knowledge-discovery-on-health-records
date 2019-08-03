@@ -1,0 +1,21 @@
+(dp1
+S'output'
+p2
+S"<type 'exceptions.ValueError'> Error when checking : expected dense_40_input to have shape (8,) but got array with shape (7,)"
+p3
+sS'layer'
+p4
+S'/home/ria/Desktop/web2py/applications/simpleNN/controllers/pima1.py'
+p5
+sS'code'
+p6
+S'<code object <module> at 0x7fd71e3bdcb0, file "/home/ria/Desktop/web2py/applications/simpleNN/controllers/pima1.py", line 1>'
+p7
+sS'snapshot'
+p8
+(dp9
+sS'traceback'
+p10
+S'Traceback (most recent call last):\n  File "/home/ria/Desktop/web2py/gluon/restricted.py", line 219, in restricted\n    exec(ccode, environment)\n  File "/home/ria/Desktop/web2py/applications/simpleNN/controllers/pima1.py", line 61, in <module>\n  File "/home/ria/Desktop/web2py/gluon/globals.py", line 419, in <lambda>\n    self._caller = lambda f: f()\n  File "/home/ria/Desktop/web2py/applications/simpleNN/controllers/pima1.py", line 45, in result1\n    predictions = model.predict(Z)\n  File "/usr/local/lib/python2.7/dist-packages/keras/models.py", line 1027, in predict\n    steps=steps)\n  File "/usr/local/lib/python2.7/dist-packages/keras/engine/training.py", line 1782, in predict\n    check_batch_axis=False)\n  File "/usr/local/lib/python2.7/dist-packages/keras/engine/training.py", line 120, in _standardize_input_data\n    str(data_shape))\nValueError: Error when checking : expected dense_40_input to have shape (8,) but got array with shape (7,)\n'
+p11
+s.

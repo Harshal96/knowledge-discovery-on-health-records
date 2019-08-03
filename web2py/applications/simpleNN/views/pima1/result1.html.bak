@@ -1,0 +1,6 @@
+{{extend 'layout.html'}}
+<h1>This is the pima1/results.html template</h1>
+{{=BEAUTIFY(response._vars)}}
+
+
+<div>{{=message}}</div>

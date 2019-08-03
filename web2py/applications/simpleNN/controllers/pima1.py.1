@@ -1,0 +1,11 @@
+# -*- coding: utf-8 -*-
+# try something like
+def index(): return dict(message="hello from pima1.py")
+def predict1():
+    return dict(message="hi")
+def result1():
+    return dict(message="redirect works")
+def my_action():
+    value = request.vars.value
+    # handle the variable 
+    redirect(URL('result1'), client_side=True)

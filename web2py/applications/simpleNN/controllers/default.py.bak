@@ -1,0 +1,90 @@
+from keras.models import Sequential
+from keras.layers import Dense
+from io import StringIO
+
+import numpy
+import math
+import sklearn
+
+model=None
+from sklearn.preprocessing import StandardScaler
+# fix random seed for reproducibility
+def index():
+	seed = 3
+	load_old=0
+
+	# load pima indians dataset
+	dataset = numpy.loadtxt("/home/ria/Desktop/simpleNN/controllers/pima-indians-diabetes.csv", delimiter=",")
+
+	# split into input (X) and output (Y) variables
+	X = dataset[:,0:8]
+	Y = dataset[:,8]
+
+	scaler=StandardScaler()
+	X=scaler.fit_transform(X)
+
+	numpy.random.seed(seed)
+
+	# create model
+	model = Sequential()
+	model.add(Dense(48, input_dim=8, init='uniform', activation='relu'))
+	model.add(Dense(10, init='uniform', activation='relu'))
+	model.add(Dense(1, init='uniform', activation='sigmoid'))
+
+	# Compile model
+	model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
+	#graph = model.get_default_graph()
+	#print("Do you wish to load existing model? Enter the name to continue or type 'N' to create a new one:")
+
+	#resp=raw_input()
+	#if resp!='N':
+	#    model.load_weights(str(resp)+".h5")
+	#    load_old=1
+	#else:
+	# Fit the model
+	model.fit(X, Y, nb_epoch=300, batch_size=10)
+
+	# evaluate the model
+	scores = model.evaluate(X, Y)
+	var=("Accuracy achieved: %.2f%%" % (scores[1]*100))
+	model.save_weights("/home/ria/Desktop/ria.h5")
+	return dict(var=var)
+	#if load_old==0:
+	#    print("Do you wish to save current model?  Enter the name to continue or type 'N' to proceed")
+	#
+	#    resp=raw_input()
+	#    if resp!='N':
+	#        model.save_weights(str(resp)+".h5")
+	#
+	# calculate predictions
+	#[['6','148','72','35','0','33.6','0.627','50']]
+	#[['1','85','66','29.0','26.6','0.351','31.0']]
+	#print("Do you wish to perform custom predictions?  Enter 'Y' to continue or 'N' to exit")
+	#resp=raw_input()
+	#if resp=='Y':
+	#    prediction(model)
+	#else:
+	#    import gc; gc.collect()
+	#    exit()
+def prediction(inputP):
+	var=Nothing
+	numpy.random.seed(seed)
+
+	# create model
+	model = Sequential()
+	model.add(Dense(48, input_dim=8, init='uniform', activation='relu'))
+	model.add(Dense(10, init='uniform', activation='relu'))
+	model.add(Dense(1, init='uniform', activation='sigmoid'))
+
+	# Compile model
+	model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
+    model.load_weights("/home/ria/Desktop/ria.h5")
+	Z=numpy.asmatrix(inputP)
+	predictions = model.predict(Z)
+	rounded = [round(x[0]) for x in predictions]
+	if math.isclose(rounded[0],0.0,rel_tol=1e-5):
+		if rounded=='0.0':
+			var=("Patient will likely not have diabetes")
+		else:
+			var=("Patient is likely to have diabetes")
+	return dict(var=var)

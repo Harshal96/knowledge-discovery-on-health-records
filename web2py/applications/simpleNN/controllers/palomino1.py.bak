@@ -1,0 +1,48 @@
+# -*- coding: utf-8 -*-
+# try something like
+def index(): return dict(message="hello from palomino1.py")
+def predict(): return dict(message="hello from predicty")
+
+def result():
+    a1=request.vars['a1']
+    a2=request.vars['a2']
+    a3=request.vars['a3']
+    a4=request.vars['a4']
+    a5=request.vars['a5']
+    a6=request.vars['a6']
+    a7=request.vars['a7']
+    a8=request.vars['a8']
+    a9=request.vars['a9']
+    a10=request.vars['a10']
+    a11=request.vars['a11']
+    a12=request.vars['a12']
+    a13=request.vars['a13']
+    a14=request.vars['a14']
+    a15=request.vars['a15']
+    a16=request.vars['a16']
+    #neural net code
+
+    #compute result in variable ans
+    return dict(message=ans)
+
+def result3():
+    value = request.vars
+    #handle input variable - value
+    a1= value['col1']
+    a2= value['col2']
+    a3= value['col3']
+    a4= value['col4']
+    a5= value['col5']
+    a6= value['col6']
+    a7= value['col7']
+    a8= value['col8']
+    a9= value['col9']
+    a10= value['col10']
+    a11= value['col11']
+    a12= value['col12']
+    a13= value['col13']
+    a14= value['col14']
+    a15= value['col15']
+    a16= value['col16']
+    #value ="[['"+value['col1']+"','"+value['col2']+"','"+value['col3']+"','"+value['col4']+"','"+value['col5']+"','"+value['col6']+"','"+value['col7']+"','"+value['col8']+"']]"
+    redirect(URL('result', vars=dict(a1=a1,a2=a2,a3=a3,a4=a4,a5=a5,a6=a6,a7=a7,a8=a8,a9=a9,a10=a10,a11=a11,a12=a12,a13=a13,a14=a14,a15=a15,a16=a16)) )

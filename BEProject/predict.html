@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<title>BE Project</title>
+	<head>
+		<script type="text/javascript" language="javascript" src="js/jquery.js"></script>
+		<style>
+			div.container {
+			    margin: 0 auto;
+			    max-width:760px;
+			}
+			div.header {
+			    margin: 50px auto;
+			    line-height:30px;
+			    max-width:760px;
+			}
+			body {
+			    background: #f7f7f7;
+			    color: #333;
+			    font: 90%/1.45em "Helvetica Neue",HelveticaNeue,Verdana,Arial,Helvetica,sans-serif;
+			}
+            .sample {
+                display: inline;
+            }
+            input[type=text], select {
+                width: 20%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+
+            input[type=submit], input[type=button] {
+                width: 20%;
+                background-color: #4CAF50;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+            input[type=submit]:hover, , input[type=button]:hover {
+                background-color: #45a049;
+            }
+		</style> 
+	</head>
+	<body>
+		<div class="header"><h1>Harshal, Kartik and Ria are the best coders in the universe</h1></div>
+        <div style="margin-left: 18%">
+            <form action="" method="post">
+            <select>
+                <option value="diabetes">Diabetes</option>
+                <option value="BD">BD</option>
+            </select>
+            <div class="sample" style="width: 20%"><input type="text" name="col1" id="col1" placeholder="Number of Times Pregnant" required /></div>
+            <div class="sample" style="width:20%"><input type="text" name="col2" id="col2" placeholder="P. Glucose C." required /></div>
+            <div class="sample" style="width:20%"><input type="text" name="col3" id="col3" placeholder="Diastolic BP" required /></div>
+            <div class="sample" style="width:20%"><input type="text" name="col4" id="col4" placeholder="Triceps" required /></div>
+            <div class="sample" style="width:20%"><input type="text" name="col5" id="col5" placeholder="2hr Serum insulin" required /></div>
+            <div class="sample" style="width:20%"><input type="text" name="col6" id="col6" placeholder="BMI" required /></div>
+            <div class="sample" style="width:20%"><input type="text" name="col7" id="col7" placeholder="D. Pedigree Fn" required /></div>
+            <div class="sample" style="width:20%"><input type="text" name="col8" id="col8" placeholder="Age" required /></div>
+            <div class="sample" style="width:20%"><input type="text" name="col9" id="col9" placeholder="Result" required /></div>
+        
+        <input type="submit" value="Predict" id="add" name="submit[add]" />
+        </form>
+        </div>
+	</body>
+</html>
