@@ -21,3 +21,31 @@ Winner: Dipex
 Runner Up: Jugaadathon (the healthcare hackathon) 
 Participant - Barclays Risehackathon 
 and more...
+
+Dataset:
+Lung Resection (Thoracic Surgery) Dataset
+1. Diagnosis - ICD code 
+2. Forced vital capacity (lungs) 
+3. Volume exhaled after forced expiration (in 1 second) 
+4. Performance status - Zubrod scale (code) 
+5. Pain before surgery - (T,F) 
+6. Haemoptysis before surgery - (T,F) 
+7. Dyspnoea before surgery - (T,F) 
+8. Cough before surgery - (T,F) 
+9. Weakness before surgery - (T,F) 
+10. Size of the original tumour - code 
+11. Type 2 DM - diabetes mellitus - (T,F) 
+12. MI up to 6 months - (T,F) 
+13. PAD (Peripheral Arterial Diseases. - (T,F) 
+14. Smoking - (T,F) 
+15. Asthma - (T,F) 
+16. Age at surgery (numeric)
+
+Pima Indians Diabetes Dataset
+1. Number of times pregnant 
+2. Plasma glucose concentration: 2 hours in an oral glucose tolerance test 
+3. Diastolic blood pressure (mm Hg) 
+4. Triceps skinfold thickness (mm) 
+5. 2-Hour serum insulin (mu U/ml) 
+6. Body mass index (weight in kg/(height in m)) 
+7. Age (years)
